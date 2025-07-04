@@ -18,7 +18,7 @@ public class Checkout {
             Product product = entry.getKey();
             int quantity = entry.getValue();
 
-            // Check stock
+         
             if (quantity > product.getQuantity()) {
                 System.out.println("Error: Not enough stock for " + product.getName());
                 return;
